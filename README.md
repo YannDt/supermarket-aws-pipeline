@@ -35,7 +35,7 @@ The purpose of this project is to create a structure that can solve a business c
 	$ terraform apply
 	```
 
-## 6 - How to test
+## 6 - Test by yourself!
 
 1. To test how it works, just insert any of the files inside the "dataset" folder in the input bucket. 
 	- Pay attention that the project simulates a processing that is carried out once a day, that is, if the 3 files are inserted at the same time, an error will be returned, because the Glue Crawler needs to be ready to be executed again.
