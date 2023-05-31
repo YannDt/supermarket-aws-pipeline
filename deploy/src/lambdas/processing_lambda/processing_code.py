@@ -30,8 +30,7 @@ def lambda_handler(event, context):
         # Deleting older files from the output bucket
         wr.s3.delete_objects(f"s3://{output_bucket_name}/")
 
-        # Concatenating previous data with current day data
-        
+        # Concatenating previous data with current day data        
         today_data = pd.concat([today_data, older_data]).drop_duplicates(inplace=True)
     except:
         print("There's no older data.")

@@ -4,8 +4,6 @@ import os
 
 def lambda_handler(event, context):
 
-    print(f"Evento: {event}")
-
     records = event['Records']
     s3_record = records[0]['body']
     s3_event = json.loads(s3_record)['Message']
