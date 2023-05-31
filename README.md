@@ -43,3 +43,5 @@ The purpose of this project is to create a structure that can solve a business c
 2. In a few seconds, the transformed file will already be inside the "data" folder in the output bucket. In about 1 minute, it will be possible to verify and perform SQL queries through Athena.
 
 3. Check if Crawler is ready to start again. If so, simulate a new day! Just insert a new file into the input bucket and watch the data update in Athena again.
+
+4. Before test everything, run ```terraform destroy``` to delete all resources from your account.
