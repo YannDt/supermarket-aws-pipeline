@@ -40,7 +40,7 @@ The purpose of this project is to create a structure that can solve a business c
 1. To test how it works, just insert any of the files inside the "dataset" folder in the input bucket. 
 	- Pay attention that the project simulates a processing that is carried out once a day, that is, if the 3 files are inserted at the same time, an error will be returned, because the Glue Crawler needs to be ready to be executed again.
 
-2. In a few seconds, the transformed file will already be inside the "data" folder in the output bucket. In about 1 minute, it will be possible to verify and perform SQL queries through Athena.
+2. In a few seconds, the transformed file will already be inside the "data" folder in the output bucket. In about 1 minute, it will be possible to verify and perform SQL queries through Athena. Remember to choose the workgroup created with Terraform.
 
 3. Check if Crawler is ready to start again. If so, simulate a new day! Just insert a new file into the input bucket and watch the data update in Athena again.
 
